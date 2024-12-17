@@ -56,6 +56,293 @@ content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
 <p class=MsoNormal>    &lt;link rel=&quot;stylesheet&quot;
 href=&quot;styles.css&quot;&gt;</p>
 
+<p class=MsoNormal>    &lt;style&gt;</p>
+
+<p class=MsoNormal>        /* General Styles */</p>
+
+<p class=MsoNormal>        * {</p>
+
+<p class=MsoNormal>            margin: 0;</p>
+
+<p class=MsoNormal>            padding: 0;</p>
+
+<p class=MsoNormal>            box-sizing: border-box;</p>
+
+<p class=MsoNormal>            font-family: Arial, sans-serif;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        body {</p>
+
+<p class=MsoNormal>            line-height: 1.6;</p>
+
+<p class=MsoNormal>            color: #333;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        header {</p>
+
+<p class=MsoNormal>            background: #004080;</p>
+
+<p class=MsoNormal>            color: #fff;</p>
+
+<p class=MsoNormal>            padding: 10px 20px;</p>
+
+<p class=MsoNormal>            position: fixed;</p>
+
+<p class=MsoNormal>            top: 0;</p>
+
+<p class=MsoNormal>            width: 100%;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: space-between;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>            z-index: 1000;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .logo {</p>
+
+<p class=MsoNormal>            font-size: 1.8rem;</p>
+
+<p class=MsoNormal>            font-weight: bold;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links {</p>
+
+<p class=MsoNormal>            list-style: none;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links li {</p>
+
+<p class=MsoNormal>            margin-left: 20px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links a {</p>
+
+<p class=MsoNormal>            color: #fff;</p>
+
+<p class=MsoNormal>            text-decoration: none;</p>
+
+<p class=MsoNormal>            font-size: 1rem;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        section {</p>
+
+<p class=MsoNormal>            padding: 60px 20px;</p>
+
+<p class=MsoNormal>            margin-top: 60px;</p>
+
+<p class=MsoNormal>            text-align: center;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        h2 {</p>
+
+<p class=MsoNormal>            margin-bottom: 20px;</p>
+
+<p class=MsoNormal>            font-size: 2rem;</p>
+
+<p class=MsoNormal>            color: #004080;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        #home {</p>
+
+<p class=MsoNormal>            background:
+url('https://via.placeholder.com/1200x500') no-repeat center center/cover;</p>
+
+<p class=MsoNormal>            color: #fff;</p>
+
+<p class=MsoNormal>            height: 100vh;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: center;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>            flex-direction: column;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        #home h1 {</p>
+
+<p class=MsoNormal>            font-size: 3rem;</p>
+
+<p class=MsoNormal>            margin-bottom: 10px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        #home p {</p>
+
+<p class=MsoNormal>            font-size: 1.2rem;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        #about, #gallery, #contact {</p>
+
+<p class=MsoNormal>            background: #f4f4f4;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .gallery {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: center;</p>
+
+<p class=MsoNormal>            gap: 10px;</p>
+
+<p class=MsoNormal>            flex-wrap: wrap;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .gallery img {</p>
+
+<p class=MsoNormal>            width: 300px;</p>
+
+<p class=MsoNormal>            height: 200px;</p>
+
+<p class=MsoNormal>            object-fit: cover;</p>
+
+<p class=MsoNormal>            border: 3px solid #ddd;</p>
+
+<p class=MsoNormal>            border-radius: 5px;</p>
+
+<p class=MsoNormal>            transition: transform 0.3s ease;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .gallery img:hover {</p>
+
+<p class=MsoNormal>            transform: scale(1.05);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        form {</p>
+
+<p class=MsoNormal>            max-width: 500px;</p>
+
+<p class=MsoNormal>            margin: 0 auto;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            flex-direction: column;</p>
+
+<p class=MsoNormal>            gap: 10px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        form label {</p>
+
+<p class=MsoNormal>            font-weight: bold;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        form input, form textarea {</p>
+
+<p class=MsoNormal>            padding: 10px;</p>
+
+<p class=MsoNormal>            border: 1px solid #ccc;</p>
+
+<p class=MsoNormal>            border-radius: 5px;</p>
+
+<p class=MsoNormal>            font-size: 1rem;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        form button {</p>
+
+<p class=MsoNormal>            background: #004080;</p>
+
+<p class=MsoNormal>            color: #fff;</p>
+
+<p class=MsoNormal>            padding: 10px;</p>
+
+<p class=MsoNormal>            border: none;</p>
+
+<p class=MsoNormal>            border-radius: 5px;</p>
+
+<p class=MsoNormal>            cursor: pointer;</p>
+
+<p class=MsoNormal>            font-size: 1rem;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        form button:hover {</p>
+
+<p class=MsoNormal>            background: #003366;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        footer {</p>
+
+<p class=MsoNormal>            background: #004080;</p>
+
+<p class=MsoNormal>            color: #fff;</p>
+
+<p class=MsoNormal>            text-align: center;</p>
+
+<p class=MsoNormal>            padding: 10px 20px;</p>
+
+<p class=MsoNormal>            margin-top: 20px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>    &lt;/style&gt;</p>
+
 <p class=MsoNormal>&lt;/head&gt;</p>
 
 <p class=MsoNormal>&lt;body&gt;</p>
@@ -77,7 +364,7 @@ href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
 <p class=MsoNormal>                &lt;li&gt;&lt;a
 href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</p>
 
-<p class=MsoNormal>                &lt;li&gt;&lt;a
+<p class=MsoNormal>                &lt;li&gt;&lt;a
 href=&quot;#gallery&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;</p>
 
 <p class=MsoNormal>                &lt;li&gt;&lt;a
@@ -161,14 +448,15 @@ id=&quot;name&quot; required&gt;</p>
 
 <p class=MsoNormal>            </p>
 
-<p class=MsoNormal>            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;</p>
+<p class=MsoNormal>            &lt;label
+for=&quot;email&quot;&gt;Email:&lt;/label&gt;</p>
 
 <p class=MsoNormal>            &lt;input type=&quot;email&quot;
 id=&quot;email&quot; required&gt;</p>
 
 <p class=MsoNormal>            </p>
 
-<p class=MsoNormal>            &lt;label
+<p class=MsoNormal>            &lt;label
 for=&quot;message&quot;&gt;Message:&lt;/label&gt;</p>
 
 <p class=MsoNormal>            &lt;textarea id=&quot;message&quot;
@@ -202,8 +490,9 @@ Reserved.&lt;/p&gt;</p>
 
 <p class=MsoNormal>        // Simple form validation</p>
 
-<p class=MsoNormal>        document.getElementById('contact-form').addEventListener('submit',
-function(e) {</p>
+<p class=MsoNormal>       
+document.getElementById('contact-form').addEventListener('submit', function(e)
+{</p>
 
 <p class=MsoNormal>            e.preventDefault();</p>
 
@@ -213,7 +502,8 @@ document.getElementById('name').value;</p>
 <p class=MsoNormal>            const email =
 document.getElementById('email').value;</p>
 
-<p class=MsoNormal>            const message = document.getElementById('message').value;</p>
+<p class=MsoNormal>            const message =
+document.getElementById('message').value;</p>
 
 <p class=MsoNormal>            alert(`Thank you, ${name}! Your message has been
 received.`);</p>
